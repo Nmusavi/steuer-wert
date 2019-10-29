@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h3>Mehrwertsteuer-Rechner</h3>
+    <form action="javascript:steuer()">
+        <article>
+        <label>Was soll berechnet werden?</label><br><br>
+        <input type="radio" name="nettoUndBrutto" onclick="checkbn()" id="brutto" checked required>
+        <label for="brutto">Mehrwertsteuer aufschlagen (Netto zu Brutto)</label><br>
+        <input type="radio" name="nettoUndBrutto" onclick="checkbn()" id="netto" required>
+        <label for="netto">Mehrwertsteuer abziehen (Brutto zu Netto)</label><br>
+        </article>
+
+        <article>
+        <label>Mehrwertsteuersatz</label><br><br>
+        <input type="radio" name="percent" id="r19" required checked>
+        <label for="ninetheen">19%</label>
+        <input type="radio" id="r7" required name="percent">
+        <label for="seven">7%</label><br>
+        </article>
+
+        <article>
+        <label id="salary-netto">Nettobetrag(Preis ohne Mehrwertsteuer) in Euro</label> 
+        <label id="salary-brutto">Brutto(Preis inklusive Mehrwertsteuer) in Euro</label>
+       
+        
+        <br><br>
+        <input type="text" id="salary" required><br>
+        </article>
+
+
+        <article>
+        <button type="submit">Berechnen</button><br>
+         </article>
+         <article>
+        <label >Ergebnis</label><br>
+        </article>
+
+        <article>
+        <label id="label_tax">Mehrwertsteuerbetrag</label><br><br>
+        <label id="tax"></label><br>
+        </article>
+
+        <article>
+        <label id="brutto-result">Bruttobetrag (Endpreis)</label>
+        <label id="netto-result">Nettobetrag</label>
+        
+        <br><br>
+        <label id="tax_complete"></label>
+        </article>
+    
+
+    </form>
+</div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

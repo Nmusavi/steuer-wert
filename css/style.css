@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+   padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 69vh;
+    width: 30vw;
+}
+article{
+    padding: .5vw;
+    background-color: rgb(243, 246, 248);
+    height: 8vh;
+    margin-bottom: .5vh
+}
+article:nth-of-type(4){
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+article:nth-of-type(5){
+    border-top: 1px solid black;
+    background-color: white;
+    height: 3vh;
+    font-weight: bold;
+    color: rgb(39, 113, 189);
+}
+button{
+    background-color: rgb(35, 108, 163);
+    color: white;
+    width: 90%;
+    height: 40%;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    outline: none;
+}
+#salary{
+    height: 30%;
+    font-weight: bold;
+    font-size: .8em;
+    color: rgb(39, 113, 189);
+    border-radius: 1px;
+}
+#tax_complete,#tax{
+    color: rgb(39, 113, 189);
+    font-weight: bold;
+    font-size: 1em;
+    
+
+}
